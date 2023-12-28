@@ -1,0 +1,15 @@
+In this Project, I have created Threads of Trains and Passengers and
+created a StationState class to keep track of the states of stations, and
+methods for synchronizing threads with await and signalAll, maintaining
+conditions of station availability and whether a train has arrived or not
+and when it departed, await and signalAll is used for knowing if a train
+has arrived at the station, and if a train has departed the station.
+For passengers, it signals when a train arrives including if a train
+is at the station and for trains, it signals when the next station
+becomes available. In MBTA, I populate hashmaps for passengers and
+their journeys, trains and their lines. The methods in MBTA includes
+checking the train at a station is the right train for the passengers
+to board and I thought of MBTA class as the controller of TrainThread,
+PassengerThread, and StationState, it makes these 3 classes to work in
+harmony. When all the passengers reach their destination and no passengers
+are left in stations, the simulation should stop.
